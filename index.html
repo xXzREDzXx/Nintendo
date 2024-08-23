@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nintendo</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="shortcut icon" href="img/logo-favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu" class="container__rotulo">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Jogos</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Novidades e eventos</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Assistência</a>
+        </li>
+      </ul>
+      <img src="img/Logo.png" alt="Logo da Alurabooks" class="container__imagem">
+
+      <ul class="opções">
+        <input type="checkbox" id="opções-menu" class="opções__botão" />
+        <label for="opções-menu" class="opções__rotulo">
+          <li class="opções__item">Categorias</li>
+        </label>
+
+        <ul class="lista-menu">
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Jogos</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Novidades e eventos</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Assistência</a>
+          </li>
+        </ul>
+        <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+      </ul>
+
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos"
+          class="container__imagem container__imagem-transparente"></a>
+      <a href="#" class="container__link">
+        <img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem">
+        <p class="container__texto">Minhas compras</p>
+      </a>
+      <a href="#" class="container__link">
+        <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem">
+        <p class="container__texto">Meu perfil</p>
+      </a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Já sabe qual jogo ou console comprar?</h2>
+    <p class="banner__texto">Encontre aqui os melhores jogos e consoles!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima busca?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Em destaques</h2>
+
+    <div class="carrossel__container">
+
+      <div class="swiper">
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide"><img src="img/cat-quest.png"
+              alt="Livro sobre apache kafka e spring boot da alura books"></div>
+          <div class="swiper-slide"><img src="img/darkets-dungeon.png"
+              alt="Livro sobre liderança em design design da alura books"></div>
+          <div class="swiper-slide"><img src="img/fc-24.png" alt="Livro sobre javascript assertivo da alura books">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/luigi_s-mansion.png" alt="Livro sobre portugol" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/the-legend-of-zelda.png" alt="Livro sobre portugol" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/world-of-goo.png" alt="Livro sobre acessibilidade" />
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__descrição">
+          <div class="descrição">
+            <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+            <h2 class="descrição__titulo-livro">Super Mario Party</h2>
+            <p class="descrição__texto">
+              Muita diversão para amigos e família - agora com partidas online no modo de jogo de tabuleiro e minijogos!
+            </p>
+          </div>
+          <img src="img/super-mario-party.png" class="descrição__imagem" />
+        </div>
+        <div class="card__botões">
+          <ul class="botões">
+            <li class="botões__item">
+              <img src="img/Favoritos.svg" alt="Favoritar livro" />
+            </li>
+            <li class="botões__item">
+              <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+            </li>
+          </ul>
+          <a href="#" class="botões__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Mais vendidos do Switch</h2>
+
+    <div class="carrossel__container">
+      <div class="swiper">
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide"><img src="img/cult-of-the-lamb.png"
+              alt="Livro sobre apache kafka e spring boot da alura books"></div>
+          <div class="swiper-slide"><img src="img/stardew-valley.png" alt="Livro sobre liderança em design da alura books">
+          </div>
+          <div class="swiper-slide"><img src="img/nba.png" alt="Livro sobre javascript assertivo da alurabooks">
+          </div>
+          <div class="swiper-slide"><img src="img/overcooked.png" alt="Livro Guia front end"></div>
+          <div class="swiper-slide"><img src="img/mario-kart.png" alt="Livro sobre portugol"></div>
+          <div class="swiper-slide"><img src="img/minecraft.png" alt="livro sobre acessibilidade"></div>
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <div class="card__descrição">
+
+          <div class="descrição">
+            <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+            <h3 class="descrição__titulo">Jogo do Ano</h3>
+            <h2 class="descrição__titulo-livro">Nintendo Switch Sports</h2>
+            <p class="descrição__texto">Enterre, swing, chute, corte e arremesse em direção à vitória em uma coletânea de esportes que fará toda a família se movimentar.
+            </p>
+          </div>
+
+          <img src="img/ns-sports.png" class="descrição__imagem">
+        </div>
+
+
+        <div class="card__botões">
+
+          <ul class="botões">
+            <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+            <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+          </ul>
+
+          <a href="#" class="botões__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">NINTENDO SWITCH</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Consoles Nintendo Switch</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Comprar consoles</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Serviços online</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Consoles</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <div class="contato__descrição">
+      <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+      <p class="contato__texto">
+        Novos jogos, consoles promoções e outros.
+      </p>
+    </div>
+    <input type="email" placeholder="        Cadastre seu e-mail" class="contato__email">
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+    });
+  </script>
+</body>
+
+</html>
